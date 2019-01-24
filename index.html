@@ -4,45 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的简历</title>
-    
-    <link rel="stylesheet" href="./loading.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <title>Gene's Resume</title>
     <link rel="stylesheet" href="./main.css">
-
     <script src="//at.alicdn.com/t/font_678870_2j6wiqqkzfnfusor.js"></script>
+    <script src="//at.alicdn.com/t/font_1030470_3utolytryfp.js"></script>
     
 </head>
 <body>
     <div id="topNavBar" class="topNavBar">
       <div class="topNavBar-inner clearfix">
         <a class="logo" href="#" alt="logo" style="float: left;">
-            <span class="rs">RS</span>
-            <span class="card">card</span>
+            <span class="rs">Gene's</span>
+            <span class="card">Resume</span>
         </a>
         <nav class="menu" style="float: right;">
             <ul class="clearfix">
                 <li><a href="#siteAbout">关于</a></li>
-                <li>
-                    <a href="#siteSkills">技能</a>
-                    <ul class="submenu">
-                            <li><a href="#">技能1</a></li>
-                            <li><a href="#">技能2</a></li>
-                            <li><a href="#">技能3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#siteWorks">作品</a>
-                    <ul class="submenu">
-                        <li><a href="#">作品1</a></li>
-                        <li><a href="#">作品2</a></li>
-                        <li><a href="#">作品3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其他</a></li>
+                <li><a href="#siteSkills">技能</a></li>
+                <li> <a href="#siteWorks">作品</a></li>
+                <li><a href="#siteContact">联系方式</a></li>
+                <!-- <li><a href="#siteMessages">留言板</a></li> -->
+                <li><span><a href="https://github.com/Gene80230"  target="_blank">GitHub</a></span></li>
             </ul>
         </nav> 
       </div>
@@ -160,41 +142,81 @@
     </section>
     <section data-x id="siteWorks" class="portfolio">
         <h2>作品集</h2>
-            <!-- 这就是view，用户看得见的东西 -->
-            <!-- Slider main container -->
-            <div id="mySlides">
-                <div class="swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <img src="./img/jobs/nav-page.jpg" class="swiper-slide">
-                            <img src="./img/jobs/canvas-page.jpg"  class="swiper-slide">
-                            <img src="./img/jobs/appleSlide-page.jpg"  class="swiper-slide">
-                            
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                    
-                        <!-- If we need navigation buttons -->
-                        
+            <div class="works">
+                <div class="worksTmlabel">
+                    <h4>在线画板</h4>
+                    <a href="#"><img src="./img/jobs/canvas-page.jpg"></a>
+                    <ul class="description">
+                        <li>简单介绍：这是一个简单的画板，除了可以在网页上画画之外，还支持手机端。</li>
+                        <li>这个项目挺好玩的，使用了Canvans来画画，支持粗细两种线段，以及画笔颜色的调整，可以擦除，还提供一键保存功能</li>
+                        <li>代码链接：<a href="https://github.com/Gene80230/Canvas" style="font-weight: bold" target="_blank">Github</a></li>
+                        <li>预览链接：<a href="https://gene80230.github.io/Canvas/index.html" style="font-weight: bold" target="_blank">Try it</a></li>
+                    </ul>
+                </div>     
+                <div class="worksTmlabel">
+                    <h4>苹果风格轮播</h4>
+                    <a href="#"><img src="./img/jobs/appleSlide-page.jpg"></a>
+                    <ul>
+                        <li>这个小项目是仿当时苹果的主页，这款轮播简洁、干净非常的有风格，让人眼前一亮</li>
+                        <li>它可以一直保持轮播无缝切换的状态</li>
+                        <li>代码链接：<a href="#" style="font-weight: bold" target="_blank">Github</a></li>
+                        <li>预览链接：<a href="#" style="font-weight: bold" target="_blank">Try it</a></li>
+                    </ul>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="worksTmlabel">
+                    <h4>主页导航</h4>
+                    <a href="#"><img src="./img/jobs/nav-page.jpg"></a>
+                    <ul>
+                        <li>这个项目是我第一个作品，非常简单的网页导航功能，代码也是简洁易实现的。</li>
+                        <li>用了很简单的CSS做出来的，用户也可以通过点击键盘上面的编辑按钮，轻松定制属于自己的网页导航</li>
+                        <li>代码链接：<a href="https://github.com/Gene80230/Nav-Demo" style="font-weight: bold" target="_blank">Github</a></li>
+                        <li>预览链接：<a href="https://gene80230.github.io/Nav-Demo/index.html" style="font-weight: bold" target="_blank">Try it</a></li>
+                    </ul>
                 </div>
+            </div>    
     </section>
-    <section class="messages">
+    <section data-x id="siteContact" class="contact">
+        <h2>联系方式</h2>
+        <div class="wrapper">
+        <ul class="contactList">
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+                <span>gjy80230@foxmail.com</span>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-phone"></use>
+                </svg>
+                <span>18172942674</span>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+                <span>445119186</span>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-wechat"></use>
+                </svg>
+                <span>Gene80230</span>
+            </li>
+        </ul>
+        </div>
+    </section>
+    <!-- <section  data-x id="siteMessages" class="messages">
         <h2>欢迎留言</h2>
-        <ol id="messageList">
-            <li></li>
+        <ol class="messageName" id="messageList">
+            <li class="content"></li>
         </ol>
         <form id="postMessageForm" style="width: 700px;margin: 50px auto">
-            <label>姓名:</label>
-            <input type="text" name="name" placeholder="请输入昵称">
-            <label>内容:</label>
-            <input type="text" name="content" placeholder="请输入内容">
-            <input type="submit" value="提交">
+            <input type="text" name="name" placeholder="你的昵称">
+            <input type="text" name="content" placeholder="写下你要说的话...">
+            <input type="submit" value="发布">
         </form>
-    </section>
+    </section> -->
     
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
@@ -203,11 +225,10 @@
     <script src="./js/base/Model.js"></script>
     <script src="./js/base/Controller.js"></script>
     <!-- 模块化 -->
-    <script src="./js/init-swiper.js"></script>
     <script src="./js/auto-slide-up.js"></script>
     <script src="./js/sticky.topbar.js"></script>
     <script src="./js/navigation.js"></script> 
-    <script src="./js/message.js"></script>
+    <!-- <script src="./js/message.js"></script> -->
 </body>
 </html>
 
